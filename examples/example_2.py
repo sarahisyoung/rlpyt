@@ -29,7 +29,9 @@ def build_and_train(env_id="Hopper-v3", run_ID=0, cuda_idx=None):
         eval_n_envs=10,
         eval_max_steps=int(51e3),
         eval_max_trajectories=50,
+    
     )
+    # huh 
     algo = SAC()  # Run with defaults.
     agent = SacAgent()
     runner = MinibatchRlEval(
